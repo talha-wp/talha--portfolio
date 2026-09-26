@@ -1,41 +1,35 @@
 # Talha Ali Portfolio
 
-Responsive personal portfolio with Home, Services, and Work pages. Built with plain HTML, CSS, and JavaScript. Includes local THICCCBOI fonts, project images, and an 18-second MP4 portfolio reel.
+Complete responsive portfolio built with HTML, CSS, and vanilla JavaScript. All editable website source files are in this repository.
 
-## Run locally
+## Open the website
 
-From the repository root:
+Download or clone the repository, keep the files and `assets` folder together, and open `index.html` in your browser. You can also open the folder with VS Code Live Server or upload its contents to a static host.
 
-```sh
-python3 -m http.server 8000 --directory dist
-```
+No installation, compilation, package manager, or build step is required.
 
-Open http://localhost:8000. Serve the `dist` folder as the website root; opening HTML files directly will not resolve the root-relative navigation and asset paths.
+## Project files
 
-## Pages
+| File | Purpose |
+| --- | --- |
+| `index.html` | Home page |
+| `services.html` | Services, process, FAQs, and portfolio video |
+| `work.html` | Selected projects and portfolio video |
+| `styles.css` | Shared layout, responsive styles, colours, and typography |
+| `pages.css` | Services and Work page styles |
+| `script.js` | Mobile navigation, service selection, current year, and contact email draft |
+| `assets/` | Local images, THICCCBOI font files, video poster, and MP4 showreel |
 
-- `/` — Home
-- `/services/` — Services, process, FAQs, and video
-- `/work/` — Project portfolio and video
+## Edit and upload
 
-## Editing
+Edit the HTML pages directly to change content, the CSS files to change styles, and `script.js` to change interactions. Navigation and asset URLs are relative, so the project can run at a domain root or inside a subfolder.
 
-- `dist/index.html`: home content and shared header/footer source
-- `dist/styles.css`: original black/lime theme and typography
-- `dist/pages.css`: Services and Work page layouts
-- `dist/script.js`: mobile navigation, service selection, and email draft form
-- `dist/assets/`: fonts, images, and the finished MP4 reel
-- `scripts/build-pages.py`: regenerate the Services and Work pages from shared home sections and the script content
-- `scripts/build-showreel.py`: optional video regeneration using FFmpeg and a supplied THICCCBOI Bold TTF font
+Upload the entire repository contents together, with `index.html` in your hosting directory. Keep the `assets` folder beside it.
 
-To regenerate the inner pages after editing the source template:
+The contact form opens a draft in the visitor's email application. Sending it requires the visitor to review and send that draft; there is no server-side form handler.
 
-```sh
-python3 scripts/build-pages.py
-```
+## Design and assets
 
-The finished website requires no build step, package installation, backend, or API keys. Publish the contents of `dist` with a static host that serves directory `index.html` files. The contact form opens a draft in the visitor’s email application; it does not submit messages to a server.
+The existing black/lime palette and THICCCBOI typography are preserved across all three pages. Services and Work include the local 18-second MP4 portfolio showcase.
 
-## Design
-
-The black/lime palette and THICCCBOI typography are preserved across all pages. Portfolio layouts draw on the supplied Shahid Ali and Webyansh references. Personal and project imagery comes from the portfolio’s supplied sources; asset and font rights remain with their respective owners.
+Layouts draw on the supplied Shahid Ali and Webyansh references. Personal and project imagery comes from the portfolio's supplied sources; asset and font rights remain with their respective owners.
