@@ -15,10 +15,15 @@ No installation, compilation, package manager, or build step is required.
 | `index.html` | Home page |
 | `services.html` | Services, process, FAQs, and portfolio video |
 | `work.html` | Selected projects and portfolio video |
+| `project-didi-hirsch.html` | Didi Hirsch single project page |
+| `project-mobile-experience.html` | Mobile experience single project page |
 | `styles.css` | Shared layout, responsive styles, colours, and typography |
 | `pages.css` | Services and Work page styles |
+| `project.css` | Responsive single project page styles |
 | `script.js` | Mobile navigation, service selection, current year, and contact email draft |
 | `assets/` | Local images, THICCCBOI font files, video poster, and MP4 showreel |
+
+Project cards on Home, Services, and Work open the local project detail pages. Each detail page includes an overview, full-size preview, design details, the portfolio video, a next-project link, and the contact section. Edit each project HTML file directly to update its content.
 
 ## Edit and upload
 
@@ -30,6 +35,6 @@ The contact form opens a draft in the visitor's email application. Sending it re
 
 ## Design and assets
 
-The existing black/lime palette and THICCCBOI typography are preserved across all three pages. Services and Work include the local 18-second MP4 portfolio showcase.
+The existing black/lime palette and THICCCBOI typography are preserved across all five pages. Services and Work include the local 18-second MP4 portfolio showcase.
 
 Layouts draw on the supplied Shahid Ali and Webyansh references. Personal and project imagery comes from the portfolio's supplied sources; asset and font rights remain with their respective owners.
